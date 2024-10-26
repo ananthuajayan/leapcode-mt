@@ -8,6 +8,23 @@ img{
     height: 100%;
     object-fit: cover;
 }
+.sections{
+    margin-bottom: 30px;
+}
+button{
+    background-color: #FF6245;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+ }
+button:hover{
+    transform: scale(1.1);
+    transition: ease-in-out .5s;
+}
 
 body {
     font-family: 'Arial', sans-serif;
@@ -98,12 +115,7 @@ header nav{
     font-size: 130px;
     font-weight: bold;
  }
- .flex-fill button{
-    background-color: #FF6245;
-    border-radius: 25px;
-    border: none;
-    color: white;
- }
+
  .botton-hero{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -162,3 +174,100 @@ header nav{
     width: 20px; 
 }
 /* hero section css  ends here*/
+
+/* seconnd section  css starts here */
+.feature-para{
+    max-width: 320px;
+}
+.feature-main-head{
+    font-weight: 700;
+}
+.feature-sub-head{
+    font-weight: 700;
+    color: #FB5711;
+}
+.section-details{
+    width: 70%;
+}
+.left-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card-custom {
+    width: 18rem;
+    border-radius: 15px;
+    background-color: #E2EBF5;
+    position: relative;
+    overflow: hidden;
+    border: none;
+  }
+
+  .card-custom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #fff; /* Use the card's background color to "cut" the corner */
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
+
+  .right-details{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+/* seconnd section css ends here*/
+  
+.feature-section {
+    position: relative;
+    padding: 50px 0;
+  }
+
+  .background-text {
+    font-size: 20rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    white-space: nowrap;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: start;
+    z-index: 2;
+    margin-bottom: 30px;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+
+  .feature-content h5 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .feature-content p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .even{
+    display: flex;
+    justify-content: end;
+  }
