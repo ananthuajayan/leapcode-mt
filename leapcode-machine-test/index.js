@@ -24,3 +24,23 @@ function toggleMenu() {
         iconClose.style.visibility = 'hidden';
     }
 }
+// culsor animation
+// Select the bubble element
+const cursorBubble = document.querySelector('.cursor-bubble');
+
+document.addEventListener('mousemove', (event) => {
+    const x = event.pageX;
+    const y = event.pageY;
+    cursorBubble.style.transform = `translate(${x - 10}px, ${y - 10}px)`;
+});
+
+document.querySelectorAll('a, button').forEach((element) => {
+    element.addEventListener('mouseenter', () => {
+        cursorBubble.classList.add('grow'); 
+    });
+    element.addEventListener('mouseleave', () => {
+        cursorBubble.classList.remove('grow');
+    });
+});
+
+

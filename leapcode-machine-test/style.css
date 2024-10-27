@@ -91,6 +91,9 @@ header nav {
   font-size: 24px;
   font-weight: bold;
 }
+.dust{
+  justify-content: flex-start !important;
+}
 
 .menu {
   list-style: none;
@@ -105,6 +108,10 @@ header nav {
   text-decoration: none;
   color: #333;
   font-weight: 400;
+}
+.menu li a:hover {
+  color: #fb5711;
+  
 }
 
 .cart {
@@ -485,4 +492,37 @@ header nav {
     left: -100%;
   }
 }
-/* Animation  */
+/* culsor Animation  */
+.cursor-bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fb5711;
+  border-radius: 50%;
+  pointer-events: none; 
+  transition: transform 0.15s ease-out, width 0.15s ease-out, height 0.15s ease-out;
+  z-index: 1000; 
+}
+
+.cursor-bubble.grow {
+  width: 30px;
+  height: 30px;
+}
+
+.cursor-bubble.animate {
+  animation: bubble-trail 0.5s ease-in-out infinite;
+}
+
+@keyframes bubble-trail {
+  0% {
+      transform: scale(1) translate(-50%, -50%);
+  }
+  50% {
+      transform: scale(1.5) translate(-50%, -50%);
+  }
+  100% {
+      transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+
