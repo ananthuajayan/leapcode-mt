@@ -30,9 +30,8 @@ header {
 
 .menu-icons {
   position: fixed;
-  top: 17px;
+  top: 13px;
   left: 20px;
-  font-size: 30px;
   cursor: pointer;
   display: none;
 }
