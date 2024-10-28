@@ -175,6 +175,9 @@ display: none;
     .container-fluid{
         padding: 30px 20px !important;
     }
+    .menu-icons{
+        top: 23px !important;
+    }
 
     .fake{
         margin-top: 100px !important;
@@ -233,5 +236,10 @@ display: none;
     nav{
         padding-right: 10px !important;
 
+    }
+}
+@media(max-height:590px){
+    .menu li a{
+        font-size: 25px;
     }
 }
