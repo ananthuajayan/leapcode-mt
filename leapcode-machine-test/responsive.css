@@ -242,4 +242,7 @@ display: none;
     .menu li a{
         font-size: 25px;
     }
+    .menu{
+        padding-left: 50px;
+    }
 }
